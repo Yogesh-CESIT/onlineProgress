@@ -1,0 +1,13 @@
+.navBar {
+  width: 100%;
+  min-height: 5vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #c1cfa53f;
+  div {
+    align-self: center;
+    justify-self: center;
+  }
+}
