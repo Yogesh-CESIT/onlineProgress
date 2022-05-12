@@ -1,6 +1,6 @@
 import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NavBar from "./pages/navBar/NavBar";
+import NavBar from "./components/navBar/NavBar";
 import Onboard from "./pages/onboard/Onboard";
 import SignUp from "./pages/signUp/SignUp";
 

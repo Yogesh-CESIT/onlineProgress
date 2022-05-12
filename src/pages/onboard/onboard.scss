@@ -1,0 +1,144 @@
+.onboardSection {
+  width: 100%;
+  min-height: 95vh;
+  .topBar {
+    width: 95%;
+    height: 5vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    .searchBar {
+      width: 18rem;
+      input {
+        width: 100%;
+        height: 2.4rem;
+        font-size: 1rem;
+        border-radius: 0.25rem;
+        // border: 1px solid rgba(0, 0, 0, 0.8);
+        border: none;
+        padding-left: 0.5rem;
+        box-shadow: 0 5px 10px #d1d9ec;
+      }
+      input:focus {
+        outline: none;
+      }
+    }
+    .createBtn {
+      width: 12rem;
+      button {
+        width: 100%;
+        height: 2.4rem;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        border: none;
+        background-color: #65e469;
+        color: white;
+        box-shadow: 0 5px 10px #d1d9ec;
+      }
+      button:hover {
+        background-color: transparent;
+        color: black;
+        // border: 1px solid rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+  .tableList {
+    width: 100%;
+    min-height: 90vh;
+    margin-top: 3rem;
+    table {
+      font-family: Mukta, sans-serif;
+      width: 95%;
+      margin: auto;
+      border-collapse: collapse;
+      background-color: white;
+      text-align: left;
+      overflow: hidden;
+      box-shadow: 0 5px 10px #e1e5ee;
+
+      thead {
+        box-shadow: 0 5px 10px #e1e5ee;
+        font-weight: 500;
+      }
+
+      th {
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        font-size: 1rem;
+      }
+
+      td {
+        padding: 1rem 2rem;
+      }
+
+      .status {
+        width: 45%;
+        border-radius: 0.2rem;
+        padding: 0.3rem 1rem;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+
+        &-edit {
+          background-color: #c8e6c9;
+          color: #388e3c;
+          margin: 0.2rem 0.3rem 0.2rem 0;
+        }
+
+        &-delete {
+          background-color: #ffcdd2;
+          color: #c62828;
+        }
+      }
+
+      //Color alternating rows
+      tr:nth-child(even) {
+        background-color: #f4f6fb;
+      }
+    }
+  }
+  .modalSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modal {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 50ch;
+      height: 60vh;
+      border: none;
+      box-shadow: 0 5px 10px #d1d9ec;
+    }
+    .modal::backdrop {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .topBar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    .searchBar {
+      width: 15rem;
+      margin-bottom: 1rem;
+      input {
+        width: 15rem;
+      }
+    }
+    .createBtn {
+      width: 10rem;
+      button {
+        width: 10rem;
+      }
+    }
+  }
+}

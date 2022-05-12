@@ -4,8 +4,9 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   font-size: 1.2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #c1cfa53f;
+  background-color: #f4f6fb52;
+  font-weight: 600;
+  box-shadow: 0 5px 10px #e1e5ee;
   div {
     align-self: center;
     justify-self: center;

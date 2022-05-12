@@ -38,12 +38,14 @@ const SignUp = () => {
           {isSign && (
             <>
               <input
+                type="text"
                 name="admiName"
                 label="First Name"
                 placeholder="Admin Name"
                 // value={form.adminName}
               />
               <input
+                type="text"
                 name="adminId"
                 label="Last Name"
                 placeholder="Admin ID"
